@@ -5,9 +5,9 @@ cask "fyolo" do
   url "https://github.com/fl0wo/fyolo/releases/download/v#{version}/fyolo.dmg"
   name "fyolo"
   desc "Terminal-first agentic development environment"
-  homepage "https://fyolo.sh"
+  homepage "https://fyolo.sh/"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "fyolo.app"
 
