@@ -13,9 +13,8 @@ cask "fyolo" do
 
   # The app is ad-hoc signed, not notarized, so clear the quarantine flag or
   # Gatekeeper refuses to open it.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/fyolo.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/fyolo.app"]
   end
 
   zap trash: "~/.fyolo"
