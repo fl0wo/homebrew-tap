@@ -1,6 +1,6 @@
 cask "fyolo" do
-  version "0.14.0"
-  sha256 "19b14fb3e965ada784b776083e6cbc65d26e1283d5c1b514029d557a459e3638"
+  version "0.14.1"
+  sha256 "3c6cb279ff2d3df0c723ae7ad66012c5e92692a5506bddf060a4233641c0ed27"
 
   url "https://github.com/fl0wo/fyolo/releases/download/v#{version}/fyolo.dmg"
   name "fyolo"
